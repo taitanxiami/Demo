@@ -43,6 +43,7 @@ static NSString *const identifier = @"cell";
     [self.tableView registerClass:[GHMenuCell class] forCellReuseIdentifier:identifier];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.bounces = NO;
+    self.tableView.showsVerticalScrollIndicator = NO;
     self.menuDidClick(self.menuItems[0],NO);
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

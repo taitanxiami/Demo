@@ -42,7 +42,12 @@
 }
 
 - (void)rotateLeftBarButtonWithScale:(CGFloat)scale {
+    
+    //scale 是弧度
     CGFloat angle = M_PI_2 * (1 - scale);
+    
+//    NSLog(@"%f",angle);
+    //CGAffineTransformMakeRotation 返回一个transform 用于旋转
     self.leftBarIcon.transform = CGAffineTransformMakeRotation(angle);
 }
 

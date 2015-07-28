@@ -36,8 +36,8 @@ static const CGFloat MenuWidth = 80;
     
     self.scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds)+MenuWidth, 0);
-//    self.scrollView.showsHorizontalScrollIndicator = NO;
-//    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.bounces = NO;
     self.scrollView.delegate = self;
     self.scrollView.backgroundColor = [UIColor lightGrayColor];
@@ -108,6 +108,7 @@ static const CGFloat MenuWidth = 80;
     // 控制菜单显示与否的状态
     self.showMenu = scrollView.contentOffset.x < MenuWidth;
     
+    //scale 0-1
     CGFloat scale = scrollView.contentOffset.x / MenuWidth;
     
     // 菜单视图的翻页效果
@@ -124,6 +125,7 @@ static const CGFloat MenuWidth = 80;
 
 // 菜单视图的翻页效果
 - (CATransform3D)transformWithScale:(CGFloat)scale {
+    
     CATransform3D transform = CATransform3DIdentity;
     transform.m34 = -1 / 1000.0; // 3D效果
     CGFloat angle = -M_PI_2 * scale;
