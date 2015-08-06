@@ -93,18 +93,12 @@
 		18023CFA1B7340AF0049ACDD /* SHCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				18023D211B73413C0049ACDD /* UICollectionViewLeftAlignedLayout.h */,
-				18023D221B73413C0049ACDD /* UICollectionViewLeftAlignedLayout.m */,
-				18023D241B7341870049ACDD /* CollectionViewCell.h */,
-				18023D251B7341870049ACDD /* CollectionViewCell.m */,
-				18023D271B73419F0049ACDD /* CYLIndexPathButton.h */,
-				18023D281B73419F0049ACDD /* CYLIndexPathButton.m */,
-				18023D2A1B73424B0049ACDD /* UIButton+CollectionCellStyle.h */,
-				18023D2B1B73424B0049ACDD /* UIButton+CollectionCellStyle.m */,
+				18023D301B7357A50049ACDD /* Controller */,
+				18023D2F1B7357970049ACDD /* other */,
+				18023D2E1B73577E0049ACDD /* v */,
+				18023D2D1B73548F0049ACDD /* customLayout */,
 				18023CFF1B7340AF0049ACDD /* AppDelegate.h */,
 				18023D001B7340AF0049ACDD /* AppDelegate.m */,
-				18023D021B7340AF0049ACDD /* ViewController.h */,
-				18023D031B7340AF0049ACDD /* ViewController.m */,
 				18023D051B7340AF0049ACDD /* Main.storyboard */,
 				18023D081B7340AF0049ACDD /* Images.xcassets */,
 				18023D0A1B7340AF0049ACDD /* LaunchScreen.xib */,
@@ -137,6 +131,44 @@
 				18023D161B7340AF0049ACDD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18023D2D1B73548F0049ACDD /* customLayout */ = {
+			isa = PBXGroup;
+			children = (
+				18023D211B73413C0049ACDD /* UICollectionViewLeftAlignedLayout.h */,
+				18023D221B73413C0049ACDD /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			name = customLayout;
+			sourceTree = "<group>";
+		};
+		18023D2E1B73577E0049ACDD /* v */ = {
+			isa = PBXGroup;
+			children = (
+				18023D241B7341870049ACDD /* CollectionViewCell.h */,
+				18023D251B7341870049ACDD /* CollectionViewCell.m */,
+				18023D271B73419F0049ACDD /* CYLIndexPathButton.h */,
+				18023D281B73419F0049ACDD /* CYLIndexPathButton.m */,
+			);
+			name = v;
+			sourceTree = "<group>";
+		};
+		18023D2F1B7357970049ACDD /* other */ = {
+			isa = PBXGroup;
+			children = (
+				18023D2A1B73424B0049ACDD /* UIButton+CollectionCellStyle.h */,
+				18023D2B1B73424B0049ACDD /* UIButton+CollectionCellStyle.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		18023D301B7357A50049ACDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18023D021B7340AF0049ACDD /* ViewController.h */,
+				18023D031B7340AF0049ACDD /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +474,7 @@
 				18023D1D1B7340AF0049ACDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18023D1E1B7340AF0049ACDD /* Build configuration list for PBXNativeTarget "SHCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +483,7 @@
 				18023D201B7340AF0049ACDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
