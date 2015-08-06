@@ -8,6 +8,7 @@
 
 import UIKit
 
+
  let cellIdentify = "todoCell"
 var todos:[SHTodoModel] = []
 
@@ -20,8 +21,8 @@ class ViewController: UIViewController {
         todos = [SHTodoModel(id: "1", title: "1.去旅游", image: "image", date:"2014-23-2" ),SHTodoModel(id: "2", title: "2.trave to beijing ", image: "image", date: "2023-3-34")]
         
         navigationItem.leftBarButtonItem = editButtonItem()
-//        self.tableView.tableFooterView = UIView.alloc()
-//        var view = UIView.alloc()
+        self.tableView.tableFooterView = UIView(frame: CGRectZero)
+        
     }
 
     
@@ -57,6 +58,16 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
         self.tableView.setEditing(editing, animated: animated)
         
     }
+    
+//事件处理
+    
+    func addItem() {
+        
+//        print("add item")
+        var addItemVC = AddItemController()
+        self.navigationController!.pushViewController(addItemVC, animated: true)
+    }
+    
 override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     }

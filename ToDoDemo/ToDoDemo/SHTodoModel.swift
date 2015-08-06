@@ -17,6 +17,7 @@ class SHTodoModel: NSObject {
     
     //初始化
     init (id : String ,title : String,image:String,date:String) {
+        
         self.id = id
         self.title = title
         self.image = image

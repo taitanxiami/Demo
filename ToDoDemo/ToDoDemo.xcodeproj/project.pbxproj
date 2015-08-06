@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18023C631B6F7D350049ACDD /* AddItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023C621B6F7D350049ACDD /* AddItemController.swift */; };
 		18F8E31B1B67A9EF005761A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E31A1B67A9EF005761A5 /* AppDelegate.swift */; };
 		18F8E31D1B67A9EF005761A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E31C1B67A9EF005761A5 /* ViewController.swift */; };
 		18F8E3201B67A9EF005761A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8E31E1B67A9EF005761A5 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18023C621B6F7D350049ACDD /* AddItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemController.swift; sourceTree = "<group>"; };
 		18F8E3151B67A9EF005761A5 /* ToDoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F8E3191B67A9EF005761A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F8E31A1B67A9EF005761A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				18F8E31C1B67A9EF005761A5 /* ViewController.swift */,
+				18023C621B6F7D350049ACDD /* AddItemController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18023C631B6F7D350049ACDD /* AddItemController.swift in Sources */,
 				18F8E31D1B67A9EF005761A5 /* ViewController.swift in Sources */,
 				18F8E31B1B67A9EF005761A5 /* AppDelegate.swift in Sources */,
 				18F8E3401B67B021005761A5 /* SHTodoModel.swift in Sources */,
@@ -447,6 +451,7 @@
 				18F8E3361B67A9EF005761A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F8E3371B67A9EF005761A5 /* Build configuration list for PBXNativeTarget "ToDoDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +460,7 @@
 				18F8E3391B67A9EF005761A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
