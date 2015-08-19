@@ -12,4 +12,8 @@
 [一次关于OC运行时和Method Swizzing的小实践](http://wxgbridgeq.github.io/blog/2015/07/23/oc-runtime-practice/) 
 
 
-2.SHTableViewCellAutoWrap UITableViewCell 自动换行
+#####2.SHTableViewCellAutoWrap 
+>UITableViewCell UILale 自动换行
+
+#####3.gecoderAddress 
+>地理位置编码和逆向编码
