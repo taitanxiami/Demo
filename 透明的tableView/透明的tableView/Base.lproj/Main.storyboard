@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7dj-Fi-quc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--透明的tableView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wsb-j7-dTq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="j0J-ge-UZh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CmF-Wd-olc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wsb-j7-dTq" secondAttribute="bottom" id="Avb-dH-iDc"/>
+                            <constraint firstItem="wsb-j7-dTq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="DhU-bs-vB3"/>
+                            <constraint firstItem="wsb-j7-dTq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Ma9-Ai-XdW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wsb-j7-dTq" secondAttribute="trailing" constant="-16" id="Vk6-Al-jtT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="wsb-j7-dTq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DhU-bs-vB3"/>
+                                <exclude reference="Ma9-Ai-XdW"/>
+                                <exclude reference="Vk6-Al-jtT"/>
+                                <exclude reference="Avb-dH-iDc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="wsb-j7-dTq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DhU-bs-vB3"/>
+                                <include reference="Ma9-Ai-XdW"/>
+                                <include reference="Vk6-Al-jtT"/>
+                                <include reference="Avb-dH-iDc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="透明的tableView" id="SsX-LZ-6uq"/>
+                    <connections>
+                        <outlet property="tableView" destination="wsb-j7-dTq" id="10O-8o-fqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067" y="301.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oA7-JT-REH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7dj-Fi-quc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3b-2u-dsM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fh9-lR-r0f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Duy-Ib-V7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="301.5"/>
+        </scene>
+    </scenes>
+</document>
